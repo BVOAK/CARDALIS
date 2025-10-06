@@ -1,3 +1,14 @@
+# PrestaShop 1.7 .gitignore
+
+#themes
+/themes/_libraries
+/themes/classic
+/themes/cardalis/node_modules/
+/themes/cardalis/_dev/img/
+/themes/cardalis/_dev/css/
+/themes/cardalis/assets/css/
+/themes/cardalis/assets/img/
+
 # Cache, temp and personal files
 
 /.htaccess
@@ -72,6 +83,7 @@
 *.hot-update.json
 
 
+/admin*/
 /admin-dev/autoupgrade/*
 !/admin-dev/autoupgrade/index.php
 !/admin-dev/autoupgrade/backup/index.php
@@ -115,11 +127,11 @@ app/config/config.php
 # Themes, modules and overrides
 
 modules/*
-override/*
+!override/*
 themes/*/
-!themes/classic
-!themes/_core
-!themes/_libraries
+!themes/cardalis
+themes/_core
+themes/_libraries
 
 # Vendors and dependencies
 
@@ -170,4 +182,3 @@ themes/default-bootstrap/modules/*/mails/*
 !var/SymfonyRequirements.php
 /vendor/
 /web/bundles/
-
