@@ -1,0 +1,39 @@
+<section id="sectionFAQList" class="u-bor-top padSection50">
+    <div class="row wrapper">
+        <div class="blockTitle text-center">
+            <h2 class="titleSec">
+                {l s="FAQ" d='Shop.Theme.Catalog'} -
+                <span>{l s="Bracelets imprimés personnalisés" d='Shop.Theme.Catalog'}</span>
+            </h2>
+        </div>
+        <div class="blockAccordion" id="blockAccordionBracelets">
+
+            {assign var="ContentsCat40" value=CMS::getCMSPages(2, 40, false, null)}
+            <div class="accordion" id="accordionBracelets">
+                {foreach from=$ContentsCat40 item=item name=ContentsCat40}
+                    {assign var="catContentId" value=$item.id_cms}
+                    {assign var="ContentCat40" value=CMS::getCMSContent($catContentId, null, null)}
+                    <div class="card">
+                        <div class="card-header" id="heading{$catContentId}">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapse{$catContentId}"
+                                    aria-expanded="false"
+                                    aria-controls="collapse{$catContentId}">
+                                    {$item.meta_title nofilter}
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapse{$catContentId}" class="collapse"
+                            aria-labelledby="heading{$catContentId}" data-parent="#accordionBracelets">
+                            <div class="card-body">
+                                {$ContentCat40.content nofilter}
+                            </div>
+                        </div>
+                    </div>
+
+                {/foreach}
+            </div>
+        </div>
+    </div>
+</section>

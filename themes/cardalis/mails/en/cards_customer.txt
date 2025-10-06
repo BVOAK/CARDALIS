@@ -1,0 +1,11 @@
+[{shop_url}] 
+
+Votre devis cartes imprimées {shop_name}
+
+Bonjour, voici votre devis cartes personnalisées :
+
+{message}
+
+Merci, et à bientôt !
+
+{shop_name} [{shop_url}]

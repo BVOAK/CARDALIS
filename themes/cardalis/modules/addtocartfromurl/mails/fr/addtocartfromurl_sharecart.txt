@@ -1,0 +1,12 @@
+
+[{shop_url}]
+
+Hello,
+
+{from} has shared with you next shopping cart from {shop_name}.
+
+{url}
+
+Thank you.
+
+{shop_name} [{shop_url}]

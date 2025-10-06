@@ -1,0 +1,13 @@
+[{shop_url}] 
+
+Votre estimation de prix cartes imprimées {shop_name}
+
+Bonjour,  Voici ci-joint votre estimation de prix.  N’hésitez pas à prendre contact avec notre service cartes imprimées pour tout complément d’information.
+
+{message}
+
+ {devis_email}
+
+Merci, et à bientôt !
+
+{shop_name} [{shop_url}]
